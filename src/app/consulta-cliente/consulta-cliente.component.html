@@ -1,0 +1,89 @@
+<div class="card-panel blue darken-1 center card-title white-text">Lista dos clientes cadastrado </div>
+<div class="container contact">
+  <form class="col s8" #form="ngForm" (submit)="consultarPesquisa()">
+    <div class="row">
+      <div class="input-field col s4">
+        <li><label [ngStyle]="{'font-size': '14px' }" for="input-cliente">Cliente *</label></li>
+          <select class="browser-default " id="input-cliente" name="input-cliente"
+          [(ngModel)]="this.cliRecebe" required>
+            <option value=""> Selecione</option>
+            <option *ngFor="let cliRecebe of clientes" [value]="cliRecebe.nomeCompleto">{{cliRecebe.nomeCompleto}}</option>
+          </select>
+      </div>
+    <div class="input-field col s3">
+      <br>
+       <li>
+        <button
+        class="btn waves-effect waves-light  b71c1c red darken-4" type="submit"
+        [disabled]="!form.valid">Consultar<i class="material-icons right">send</i>
+       </button>
+     </li>
+   </div>
+   <div class="input-field col s2">
+     <br>
+     <li>
+       <button
+         class="btn waves-effect waves-light blue darken-1 " (click)="limpar()">
+           Limpar<i class="material-icons right">clear_all</i>
+       </button>
+     </li>
+    </div>
+    <div class="input-field col s2">
+      <br>
+      <li>
+        <button
+          class="btn waves-effect waves-light blue darken-1 " routerLink="/">
+            Voltar<i class="material-icons right">arrow_back</i>
+        </button>
+      </li>
+     </div>
+   </div>
+
+  </form>
+</div>
+
+  <div class="card-panel blue blue center card-title white-text size-font: 20px">Listar Clientes:</div>
+
+  <div class="example-container">
+    <table  class="striped">
+      <tr class=" blue darken-1 white-text   ">
+        <th scope = "col" width="5%" class="tdTable">ID </th>
+        <th scope = "col" width="25%" class="tdTable">Nome Completo </th>
+        <th scope = "col" width="15%"class="tdTable">CPF </th>
+        <th scope = "col" width="15%"class="tdTable">email </th>
+        <th scope = "col" width="20%"class="tdTable">Tipo Sanguíneo </th>
+        <th scope = "col" width="10%"class="tdTable">Nacionalidade</th>
+        <th width="4.5%"></th>
+
+      </tr>
+    </table>
+  </div>
+
+  <div class="example-container">
+    <table  class="striped">
+        <tbody >
+          <tr *ngFor = 'let cli of clis'>
+            <td width="5%" class="tdTable" >{{cli.id}} </td>
+            <td width="25%">{{cli.nomeCompleto}}       </td>
+            <td width="15%">{{cli.cpf}}                </td>
+            <td width="25%">{{cli.email}}                 </td>
+            <td width="30%">{{cli.tipoSangue}}                 </td>
+            <td width="15%">{{cli.nacionalidade}}                 </td>
+         </tr>
+        </tbody>
+  </table>
+
+
+  <div *ngIf="!clis || clis!.length == 0">
+    <div class="row">
+      <div class="center-align">
+        <i class="col s12 material-icons large blue-text">sentiment_satisfied</i>
+        <span class="col s12 flow-text blue-text"
+          >Não Encontrei NADA !!!!</span
+        >
+        </div>
+      </div>
+    </div>
+  </div>
+
+

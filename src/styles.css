@@ -1,0 +1,49 @@
+
+@import "~materialize-css/dist/css/materialize.css";
+@import "~material-icons/iconfont/material-icons.css";
+
+:root {
+  --primaryColor: rgb(0, 255, 42);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+}
+
+table {
+  width: 100%;
+}
+.example-container {
+  height: 530px;
+  max-width: 100%;
+  overflow: auto;
+
+}
+
+thead:first-child{
+  background-color:rgba(0, 0, 15, 0.479);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.input-field label {
+  -webkit-transform: translateY(-14px) scale(0.8);
+  transform: translateY(-14px) scale(0.8);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.intro{
+  text-align: center;
+  padding-top: 13%;
+  padding-bottom: 13%;
+  min-height: 680px;
+  margin-bottom: 50px;
+  background-image:url("/asserts/vacina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

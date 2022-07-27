@@ -1,0 +1,21 @@
+.my-logo {
+  height: 150px;
+  background-position: left;
+
+}
+
+.dark{
+  background-image: url(/assets/vacina.jpg);
+  background-position: left;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+

@@ -1,0 +1,59 @@
+{
+  "cliente": [
+    {
+      "id": 1,
+      "nomeCompleto": "Rodrigo Barbosa da Silva",
+      "cpf": "239.295.619-72",
+      "email": "raiz@hotmail.com",
+      "tipoSangue": "A+",
+      "nacionalidade": "brasileiro"
+    },
+    {
+      "id": 2,
+      "nomeCompleto": "Jesus Cristo mudadO",
+      "cpf": 12456881,
+      "email": "raiz@hotmail.com",
+      "tipoSangue": "B-",
+      "nacionalidade": "brasileiro"
+    },
+    {
+      "id": "6",
+      "nomeCompleto": "Leonizio MMMM   ",
+      "cpf": "77777777777",
+      "email": "raiz@hotmail.com",
+      "tipoSangue": "B-",
+      "nacionalidade": "brasileiro"
+    },
+    {
+      "id": "3",
+      "nomeCompleto": "Polibio B ",
+      "cpf": "115151515",
+      "email": "raiz@hotmail.com",
+      "tipoSangue": "AB-",
+      "nacionalidade": "brasileiro"
+    }
+  ],
+  "Vacina": [
+    {
+      "nomeVacina": "TESTE A ",
+      "validade": 17082022,
+      "origemVacina": "Argentina",
+      "reforco": "Não",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nomeVacina": "Capora 2",
+      "validade": "29012022",
+      "origemVacina": "Brasileira",
+      "reforco": "SIM"
+    },
+    {
+      "nomeVacina": "TESTE B  ",
+      "validade": 25022012,
+      "origemVacina": "NACIONALLLL",
+      "reforco": "SIM",
+      "id": "342"
+    }
+  ]
+}
