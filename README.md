@@ -1,4 +1,7 @@
- Controle-Vacina  
+ Controle-Vacina 
+  GH-PAGES
+  https://rbsbarbosa.github.io/controlevacina/
+  
 # Checklist
 Atividade 02
 - [x] Selecionar o tema do Projeto
