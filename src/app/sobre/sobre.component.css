@@ -1,0 +1,38 @@
+.my-sobre {
+  height: 800px;
+  width:auto;
+  background-size: cover;
+
+
+}
+
+.dark{
+  background-image: url(/assets/vacinaSobre.jpeg);
+  background-position: auto;
+}
+.descricao{
+
+  background-position: auto;
+  background-size: auto;
+  text-align: center;
+  background-color: blue;
+  height: 150px;
+  width:auto;
+
+
+}
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-attachment: scroll;
+
+
+}
+
+main {
+  flex: 1 0 auto;
+}
+

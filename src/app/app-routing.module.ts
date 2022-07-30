@@ -1,3 +1,4 @@
+import { SobreComponent } from './sobre/sobre.component';
 import { ConsultaClienteComponent } from './consulta-cliente/consulta-cliente.component';
 import { VacinaComponent } from './vacina/vacina.component';
 import { NgModule } from '@angular/core';
@@ -13,7 +14,8 @@ const routes: Routes = [
 {path:'cliente',component: ClienteComponent},
 {path:'vacina',component: VacinaComponent},
 {path:'consulta-cliente',component: ConsultaClienteComponent},
-{path:'consulta-vacina',component: ConsultaVacinaComponent}
+{path:'consulta-vacina',component: ConsultaVacinaComponent},
+{path:'sobre',component: SobreComponent}
 
 
 

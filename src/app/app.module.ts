@@ -10,6 +10,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { VacinaComponent } from './vacina/vacina.component';
 import { ConsultaClienteComponent } from './consulta-cliente/consulta-cliente.component';
 import { ConsultaVacinaComponent } from './consulta-vacina/consulta-vacina.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 
@@ -23,7 +24,8 @@ import { ConsultaVacinaComponent } from './consulta-vacina/consulta-vacina.compo
     FooterComponent,
     VacinaComponent,
     ConsultaClienteComponent,
-    ConsultaVacinaComponent
+    ConsultaVacinaComponent,
+    SobreComponent
 
 
   ],
